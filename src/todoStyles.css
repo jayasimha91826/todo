@@ -1,0 +1,62 @@
+
+.mainContainer{
+    background-image:url('/public/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);}
+
+.todoHeading{
+    text-align: center;
+    padding: 20px;
+}
+
+#inputContainer{
+    display: flex;
+    justify-content: center;
+}
+#inputContainer input{
+    width: 35rem;
+    height: 50px;
+    border-radius: 16px;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.addmebutton{
+    width: 100px;
+    height: 30px;
+    background-color:rgb(243, 246, 247);
+    border-radius: 8px;
+    font-family: 'Indie Flower', cursive;
+}
+.ulListContainer{
+    list-style-type: none;
+}
+.listContainer{
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: left;
+    width: 600px;
+    margin: 20px 10px 10px 400px;
+    padding-left: 0px;
+    border-radius: 16px;
+}
+.divv{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.WrongImg{
+    width: 10px;
+    height: 10px;    
+}
+.ListItem{
+    
+}
