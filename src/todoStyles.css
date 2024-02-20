@@ -1,62 +1,79 @@
-
-.mainContainer{
-    background-image:url('/public/background1.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    padding: 0px;
-    margin: 0px;
-    background-color: rgba(0, 0, 0, 0.5);}
-
-.todoHeading{
-    text-align: center;
-    padding: 20px;
+.mainContainer {
+  /* Background settings */
+  background-image: url('/public/background1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh; /* Full height of the viewport */
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 
-#inputContainer{
-    display: flex;
-    justify-content: center;
+.todoHeading {
+  text-align: center;
+  padding: 20px;
 }
-#inputContainer input{
-    width: 35rem;
-    height: 50px;
-    border-radius: 16px;
-}
-.buttonContainer{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.addmebutton{
-    width: 100px;
-    height: 30px;
-    background-color:rgb(243, 246, 247);
-    border-radius: 8px;
-    font-family: 'Indie Flower', cursive;
-}
-.ulListContainer{
-    list-style-type: none;
-}
-.listContainer{
-    background-color: rgb(253, 253, 253);
-    display: flex;
-    justify-content: left;
-    width: 600px;
-    margin: 20px 10px 10px 400px;
-    padding-left: 0px;
-    border-radius: 16px;
-}
-.divv{
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
 
+#inputContainer {
+  display: flex;
+  justify-content: center; /* Center the input container horizontally */
 }
-.WrongImg{
-    width: 10px;
-    height: 10px;    
+
+#inputContainer input {
+  width: 35rem;
+  height: 50px;
+  border-radius: 16px;
 }
-.ListItem{
-    
+
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* Center the button container horizontally */
+  margin-top: 10px;
+}
+
+.addmebutton {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(243, 246, 247);
+  border-radius: 8px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.listContainer {
+  background-color: rgb(253, 253, 253);
+  position: fixed; /* Fixed position so it stays in place */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the container */
+  width: 550px;
+  max-height: 70vh; /* Maximum height of 70% of the viewport height */
+  overflow-y: auto; /* Vertical scrolling if content overflows */
+  padding-left: 10px;
+  border-radius: 16px;
+}
+
+.WrongImg {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.listContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listContainer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listContainer ul li img.WrongImg {
+  margin-left: 10px;
+}
+
+.checked {
+  text-decoration: line-through;
 }
